@@ -1,17 +1,40 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Tab 2
+    <ion-title color="rad">
+      Component 2
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <ion-card>
+    <img alt="Silhouette of mountains" src="https://i.ytimg.com/vi/l59gCpzKOdU/maxresdefault.jpg" />
+    <ion-card-header>
+      <ion-card-title>วิทยาลัยเทคโนโลยีพงษ์สวัสดิ์</ion-card-title>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+    </ion-card-header>
+  
+    <ion-card-content>
+      14/5 ถ.พิบูลสงคราม ต.สวนใหญ่ อ.เมือง จ.นนทบุรี 11000, Muang Nonta Buri, Thailand, Nonthaburi
+    </ion-card-content>
+  </ion-card>
+
+  <ion-item>
+    <ion-label>2. checkbox</ion-label>
+    <ion-checkbox slot="end">เลือกฉันสิ</ion-checkbox>
+    <ion-checkbox slot="end">เลือกฉันดีกว่า</ion-checkbox>
+  </ion-item>
+
+    <ion-item>
+      <ion-label>3. Chip</ion-label>
+      <ion-chip>
+        <ion-avatar>
+          <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+        <ion-label>Avatar Chip</ion-label>
+        <ion-icon name="close-circle"></ion-icon>
+      </ion-chip>
+    </ion-item>
+
 </ion-content>

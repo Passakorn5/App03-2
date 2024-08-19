@@ -1,17 +1,43 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 1
+      Component
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-item>
+    l.Action Sheets
+    <ion-button id="open-action-sheet">Open</ion-button>
+    <ion-action-sheet trigger="open-action-sheet" header="Actions" [buttons]="actionSheetButtons"></ion-action-sheet>
+  </ion-item>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <ion-item>
+    <ion-label>
+      2.Alert
+    </ion-label>
+    <ion-button id="present-alert">Click Me</ion-button>
+    <ion-alert trigger="present-alert" header="ต้องการลบข้อมูลใช่ไหม" [buttons]="alertButtons"></ion-alert>
+  </ion-item>
+  <ion-item>
+    <ion-label>
+
+      3.Aleat Input
+    </ion-label>
+    <ion-button id="alertinput">Click Me</ion-button>
+    <ion-alert trigger="alertinput" header="กรอกข้อมูลสินค้า" [buttons]="alertButtonsinput"
+      [inputs]="alertInputs"></ion-alert>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>
+      <ion-list>
+        <ion-item>
+          <p> <ion-label>4.Badges styled</ion-label></p>
+          <ion-badge>1</ion-badge>
+        </ion-item>
+      </ion-list>
+    </ion-label>
+  </ion-item>
 </ion-content>
